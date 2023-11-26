@@ -6,13 +6,13 @@ table {
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 2px solid black;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+tr th {
+  background-color: rgb(228, 239, 241);
 }
 
 .delete-button {

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.main {
+  max-width: 700px;
+  margin-inline: auto;
+  padding-bottom: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product__input--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.product-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 13px;
+}
+
+label {
+  padding-bottom: 6px;
+  color: black;
+  font-weight: 500;
+}
+
+.product__description {
+  grid-column: 1 / span 2;
+}
+
+.add-btn {
+  text-align: start;
+}
+
+.add-btn button {
+  outline: none;
+  background: transparent;
+  border: 1px solid #fd8585;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    color: #fff;
+    background-color: #fd8585;
+  }
+}
+
+.product__details {
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-title {
+  margin-block-end: 5px;
+}
+
+.product-description {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  margin-block-start: 0px;
+}
+
+input[type="text"] {
+  padding: 8px 15px;
+  box-sizing: border-box;
+  border: 1.5px solid #fd8585;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 1.5px solid #fd8585;
+}
+
+input[type="number"] {
+  padding: 8px 15px;
+  box-sizing: border-box;
+  border: 1.5px solid #fd8585;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="number"]:focus {
+  border: 1.5px solid #fd8585;
+}
+
+select:focus {
+  padding: 8px 15px;
+  border-color: #fd8585 !important;
+}
+
+select {
+  padding: 8px 15px;
+  outline: none;
+  border-color: #fd8585;
+}
+
+@media screen and (max-width: 600px) {
+  .product__input--content {
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+  }
+
+  .product__description {
+    grid-column: 1;
+  }
+}

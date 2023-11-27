@@ -167,26 +167,28 @@ const FormData = () => {
       </div>
       <div className="product__details">
         {products.length > 0 ? (
-          <table>
-            <tr>
-              <th>Product Name</th>
-              <th>Product ID</th>
-              <th>Product Type</th>
-              <th>Color</th>
-              <th>Size</th>
-              <th>Quantity</th>
-              <th>Price</th>
-              <th>Description</th>
-              <th>Delete</th>
-            </tr>
-            {products.map((product, i) => (
-              <ProductTable
-                key={i}
-                product={product}
-                handleDelete={handleDelete}
-              />
-            ))}
-          </table>
+          <div className="product-table">
+            <table>
+              <tr>
+                <th>Product Name</th>
+                <th>Product ID</th>
+                <th>Product Type</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Delete</th>
+              </tr>
+              {products.map((product, i) => (
+                <ProductTable
+                  key={i}
+                  product={product}
+                  handleDelete={handleDelete}
+                />
+              ))}
+            </table>
+          </div>
         ) : (
           "Not Available Product"
         )}

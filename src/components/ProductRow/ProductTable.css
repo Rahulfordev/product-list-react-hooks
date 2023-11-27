@@ -6,7 +6,7 @@ table {
 
 td,
 th {
-  border: 1px solid 1px solid rgb(185 175 175);
+  border: 1px solid rgb(185 175 175);
   text-align: left;
   padding: 8px;
 }
@@ -26,15 +26,6 @@ table tr:nth-child(even) {
 table tr:hover {
   background-color: #ddd;
 }
-
-/* tr th {
-  background-color: #6f7bd9;
-  color: #fff;
-}
-
-td:nth-child(even) {
-  background-color: #2600ff;
-} */
 
 .delete-button {
   cursor: pointer;

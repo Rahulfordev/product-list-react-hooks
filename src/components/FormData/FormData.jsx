@@ -158,6 +158,7 @@ const FormData = () => {
                   placeholder="Product Description"
                   onChange={(e) => setProductDes(e.target.value)}
                   value={productDes}
+                  required
                 />
               </div>
             </div>

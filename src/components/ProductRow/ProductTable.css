@@ -6,14 +6,35 @@ table {
 
 td,
 th {
-  border: 2px solid black;
+  /* border: 1px solid rgb(111, 105, 105); */
   text-align: left;
   padding: 8px;
 }
 
-tr th {
-  background-color: rgb(228, 239, 241);
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
 }
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+/* tr th {
+  background-color: #6f7bd9;
+  color: #fff;
+}
+
+td:nth-child(even) {
+  background-color: #2600ff;
+} */
 
 .delete-button {
   cursor: pointer;

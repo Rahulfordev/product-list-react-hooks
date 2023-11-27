@@ -13,6 +13,13 @@
   column-gap: 2rem;
 }
 
+.product__container {
+  /* box-shadow: 0 14px 2px -30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  padding: 15px;
+  border-radius: 8px;
+}
+
 .product-input {
   display: flex;
   justify-content: center;

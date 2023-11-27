@@ -25,6 +25,7 @@ const ProductTable = ({ product, handleDelete }) => {
       <td>{productDes}</td>
       <td>
         <RiDeleteBin5Line
+          color="red"
           className="delete-button"
           onClick={() => handleDelete(productId)}
         />
